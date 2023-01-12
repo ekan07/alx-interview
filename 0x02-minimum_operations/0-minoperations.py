@@ -9,6 +9,6 @@ def minOperations(n):
     while d > 0:
         q, r = divmod(n, d)
         if (r == 0):
-        return q + minOperations(d)
+            return q + minOperations(d)
         d -= 1
     return 0
